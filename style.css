@@ -106,10 +106,13 @@ li a {
 }
 
 .skill_container {
-    background:#E6ECF8 ;
+    justify-content: space-between;
+    background:#ffffff ;
     border-radius: 20px;
     border: #c3c1c1 1px solid;
+    width: 80vw;
 }
+
 
 .column {
     align-items: center;
@@ -119,6 +122,13 @@ li a {
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column > i {
+    padding: 3rem;
+    color:#6E07F3;
 }
 
 .row::after {
@@ -137,7 +147,28 @@ li a {
     color: #6E07F3;
 }
 
-#lang_list {
-    width: 5px;
-    align-self: center;
+.skill_list {
+    display: flex;
+    list-style: none;
+    text-align: center !important;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.links {
+    margin-top: -10rem;
+}
+
+.list_links {
+    justify-content: space-between;
+}
+
+.redirect_links {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+.redirect_links:hover {
+    color: #111;
 }
