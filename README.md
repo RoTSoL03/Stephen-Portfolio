@@ -1,4 +1,4 @@
-#Clean and Elegant Portfolio Website
+# Clean and Elegant Portfolio Website
 
 Designed to demonstrate the power of using just html and css to create stunning website portfolio without the need of other languages such as JS or other frameworks.
 
