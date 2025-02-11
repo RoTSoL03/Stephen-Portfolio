@@ -38,11 +38,15 @@ li {
     float: left;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 #logo_text {
@@ -180,6 +184,16 @@ li a {
     transition: .2s ease-in-out;
 }
 
+#prog_pack {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#cam_pack {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .package_container {
     justify-content: space-between;
     background:#ffffff ;
@@ -200,9 +214,63 @@ li a {
     flex-direction: column;
 }
 
-.mid_pack {
+.package_column > a {
+    padding: 1rem;
+    border: #141c3a solid 2px;
+    border-radius: 40px;
+    color: #141c3a;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.package_column > a:hover{
     background-color: #141c3a;
     color: #E6ECF8;
+}
+
+.mid_pack {
+    align-items: center;
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #141c3a;
+    color: #E6ECF8;
+}
+
+.package_column > ul {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.mid_pack > ul {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.mid_pack > a {
+    padding: 1rem;
+    border: #E6ECF8 solid 2px;
+    border-radius: 40px;
+    color: #E6ECF8;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.mid_pack > a:hover {
+    color: #141c3a;
+    background-color: #E6ECF8;
+    transition: .2s ease-in-out;
 }
 
 .row::after {
@@ -212,20 +280,25 @@ li a {
 }
 
 @media screen and (max-width: 600px) {
-    .column {
+    .package_column {
+        width: 100%;
+    }
+
+    .mid_pack {
         width: 100%;
     }
 }
 
 
 .CTA {
-    margin-top: -11rem;
+    margin-bottom: -15rem;
+    padding-bottom: 0;
 }
 
 
 .cta_container {
     justify-content: space-between;
-    background-color: #141c3a;
+    background-color: #6E07F3;
     border-radius: 20px;
     width:90vw;
     color: #E6ECF8;
@@ -253,12 +326,12 @@ li a {
     border-radius: 40px;
     margin-top: 0;
     margin-bottom: 0;
-    border: #6E07F3 solid 2px;
+    border: #141c3a solid 2px;
     transition: .2s ease-in-out;
 }
 
 .cta_btn:hover {
-    background-color: #6E07F3;
+    background-color: #141c3a;
     transition: .2s ease-in-out;
 }
 
@@ -298,3 +371,4 @@ li a {
     color: #6E07F3;
     transition: .2s ease-in-out;
 }
+
