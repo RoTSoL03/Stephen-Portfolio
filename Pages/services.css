@@ -180,6 +180,44 @@ li a {
     transition: .2s ease-in-out;
 }
 
+.package_container {
+    justify-content: space-between;
+    background:#ffffff ;
+    border-radius: 20px;
+    border: #c3c1c1 1px solid;
+    width: 80vw;
+}
+
+.package_column {
+    align-items: center;
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid_pack {
+    background-color: #141c3a;
+    color: #E6ECF8;
+}
+
+.row::after {
+    content: "";;
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
 .CTA {
     margin-top: -11rem;
 }
