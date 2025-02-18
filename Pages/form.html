@@ -21,35 +21,37 @@
     </section>
 
     <section class="purple">
-       <form action="submitted.html" id="survey_form">
-        <div class="form_group">
-            <label for="name" id="name_label">Name</label>
-            <input type="text" name="name" class="form_control" id="name" placeholder="Enter your name" required>
+        <div class="container">
+            <form action="submitted.html" id="survey_form">
+                <div class="form_group">
+                    <label for="name" id="name_label">Name</label>
+                    <input type="text" name="name" class="form_control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form_group">
+                    <label for="email" id="email_label">Email</label>
+                    <input type="email" name="email" class="form_control" id="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="form_group">
+                    <label for="reason">Reason</label>
+                    <select name="reason" id="dropdown" class="form_control" required>
+                        <option disabled selected value>Select Reason</option>
+                        <option value="query">Query</option>
+                        <option value="collab">Collaborate</option>
+                        <option value="services">Avail Service</option>
+                        <option value="complaint">Complaint</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="message">Write your meessage</label>
+                    <textarea name="message" id="message" placeholder="Enter your message here..." class="input_textarea"></textarea>
+                </div>
+                <div class="form_group">
+                    <button type="submit" id="submit" class="submit_button">
+                        Submit
+                    </button>
+                </div>
+               </form>
         </div>
-        <div class="form_group">
-            <label for="email" id="email_label">Email</label>
-            <input type="email" name="email" class="form_control" id="email" placeholder="Enter your Email" required>
-        </div>
-        <div class="form_group">
-            <label for="reason">Reason</label>
-            <select name="reason" id="dropdown" class="form_control" required>
-                <option disabled selected value>Select Reason</option>
-                <option value="query">Query</option>
-                <option value="collab">Collaborate</option>
-                <option value="services">Avail Service</option>
-                <option value="complaint">Complaint</option>
-            </select>
-        </div>
-        <div class="form_group">
-            <label for="message">Write your meessage</label>
-            <textarea name="message" id="message" placeholder="Enter your message here..." class="input_textarea"></textarea>
-        </div>
-        <div class="form_group">
-            <button type="submit" id="submit" class="submit_button">
-                Submit
-            </button>
-        </div>
-       </form>
     </section>
 
     <section class="CTA block">
