@@ -1,0 +1,5 @@
+* {
+    font-family: 'Poppins';
+    cursor: url('../assets/this_is_my_own_cursor.png'), auto !important;
+    box-sizing: border-box;
+}
